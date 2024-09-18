@@ -10,12 +10,12 @@ const ProductProvider = ({children}) => {
         const fetchProducts = async () => {
             const response = await fetch('https://fakestoreapi.com/products');
             const data = await response.json();
-            console.log(data);
+            setProducts(data);
         };
         fetchProducts();
     }, []);
 
-    return <ProductContext.Provider>{children}</ProductContext.Provider>;
+    return <ProductContext.Provider value={{products}}>{children}</ProductContext.Provider>;
 
 };
 
