@@ -22,9 +22,14 @@ const Header = () => {
     return (
         <header className={`${isActive ? 'bg-white py-4 shadow-md' : 'bg-none py-6'} fixed w-full z-10 transition-all}`}>
             <div className='container mx-auto flex justify-between items-center h-full'>
-                <Link to={'/'} >
+                <Link to={'/'} className='flex items-center gap-2'>
                     <div>
                         <img className='w-[60px]' src={Logo} alt='' />
+                    </div>
+                    <div>
+                        <h1 className='text-pacific text-3xl font-extrabold uppercase'>
+                            Advance Store
+                        </h1>
                     </div>
                 </Link>
                 <div onClick={() => setIsOpen(!isOpen)} className='cursor-pointer flex relative'>

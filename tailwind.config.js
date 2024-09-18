@@ -21,6 +21,7 @@ export default {
       colors: {
         primary: '#222222',
         secondary: '#F5E6E0',
+        pacific: '#0093CB',
       },
       backgroundImage: {
         home: "url('/src/img/home.jpeg')",
