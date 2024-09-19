@@ -27,7 +27,7 @@ const Header = () => {
                         <img className='w-[60px]' src={Logo} alt='' />
                     </div>
                     <div>
-                        <h1 className={`${isActive ? 'text-primary' : 'text-teal-50'} text-3xl font-extrabold uppercase`}>
+                        <h1 className={`${isActive ? 'text-primary' : 'text-teal-50'} text-md font-extrabold uppercase md:text-xl`}>
                             Advance Store
                         </h1>
                     </div>
