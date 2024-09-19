@@ -1,27 +1,31 @@
 import Phone from '../img/app-phone.png';
 
-
 const Landing = ({ productsRef }) => {
     return (
-        <section className="h-[800px] bg-home bg-no-repeat bg-cover bg-center py-24">
-            <div className="container mx-auto flex flex-col-reverse md:flex-row justify-between items-center h-full px-4 md:px-64">
+        <section className='h-[800px] bg-home bg-no-repeat bg-cover bg-center items-center'>
+            {/* container */}
+            <div className='container mx-auto flex flex-col-reverse md:flex-row justify-center items-center h-full px-4 gap-[64px] md:gap-[160px] lg2:gap-[256px]'>
+                {/* text button */}
                 <div className='flex flex-col justify-center items-center text-center md:text-left'>
-                    <div className='font-semibold flex items-center bg-modGreen text-white border-0 rounded-xl px-3 py-1 text-left'>
-                        <h1 className='text-[32px] md:text-[50px] leading-[1.1] font-light px-2 py-4'>
+                    {/* text */}
+                    <div className='font-semibold flex items-center bg-modGreen text-white border-0 rounded-2xl px-3 py-1 lg2:py-2'>
+                        <h1 className='text-[32px] lg2:text-[48px] xl:text-[64px] leading-[1.1] font-light px-2 py-4 lg2:py-6'>
                             <span className='font-normal drop-shadow-lg'>
                                 Start Exploring  <br />
                             </span>
-                            <p className='mt-3 text-[20px] md:text-[24px]'>
+                            <p className='mt-3 text-[20px] lg2:text-[24px] xl:text-[30px]'>
                                 Our Amazing Product
                             </p>
                         </h1>
                     </div>
-                    <button onClick={() => productsRef.current.scrollIntoView({ behavior: 'smooth' })}className="mt-4 self-start uppercase text-lg md:text-2xl font-extrabold text-white bg-primary px-8 py-3 rounded-full border-0 hover:bg-modOrange">
+                    {/* button */}
+                    <button onClick={() => productsRef.current.scrollIntoView({ behavior: 'smooth' })}className='mt-4 lg2:mt-6 uppercase md:self-start text-lg font-extrabold text-white bg-primary px-8 py-3 rounded-full border-0 hover:bg-modOrange'>
                         Find More
                     </button>
                 </div>
-                <div className='flex justify-center items-center mt-4 md:mt-0 md:ml-8'>
-                    <img className='w-[150px] sm:w-[200px] md:w-[300px] transition-all duration-300' src={Phone} alt="" />
+                {/* image */}
+                <div className='mt-4'>
+                    <img className='w-[175px] lg2:w-[225px] xl:w-[300px] max-w-xs' src={Phone} alt="" />
                 </div>
             </div>
         </section>

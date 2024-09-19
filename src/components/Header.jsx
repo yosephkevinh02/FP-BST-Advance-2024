@@ -21,7 +21,7 @@ const Header = () => {
 
     return (
         <header className={`${isActive ? 'bg-modGreen shadow-lg' : 'bg-modGreen'} py-4 fixed w-full z-10 transition-all`}>
-            <div className='container mx-auto flex justify-between items-center h-full'>
+            <div className='container mx-auto flex justify-between lg:px-6 items-center h-full'>
                 <Link to={'/'} className='flex items-center gap-2'>
                     <div>
                         <img className='w-[60px]' src={Logo} alt='' />
