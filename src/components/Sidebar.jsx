@@ -19,7 +19,7 @@ const Sidebar = () => {
                     Cart ({itemAmount})
                 </div>
                 <div onClick={handleClose} className='cursor-pointer w-8 h-8 flex justify-center items-center'>
-                    <IoMdClose className='text-2xl hover:text-color-pacific' onClick={handleClose} />
+                    <IoMdClose className='text-2xl hover:text-modOrange' onClick={handleClose} />
                 </div>
             </div>
             <div className='flex-1 flex flex-col gap-y-2 h-[460px] overflow-y-auto overflow-x-hidden border-b'>
@@ -32,11 +32,11 @@ const Sidebar = () => {
                     <div className='uppercase font-semibold'>
                         <span className='mr-2'>Total : </span>SGD {parseFloat(total).toFixed(2)}
                     </div>
-                    <div onClick={clearCart} className='cursor-pointer py-4 bg-teal-800 text-white w-12 h-12 flex justify-center items-center text-xl'>
+                    <div onClick={clearCart} className='cursor-pointer py-4 bg-modOrange text-white w-12 h-12 flex justify-center items-center text-xl'>
                         <FiTrash2 />
                     </div>
                 </div>
-                <Link to={'/checkout'} className='bg-primary flex p-4 mt-4 justify-center items-center text-white w-full font-medium hover:bg-teal-700'>
+                <Link to={'/checkout'} className='bg-primary flex p-4 mt-4 justify-center items-center text-white w-full font-medium hover:bg-modOrange'>
                     CHECKOUT
                 </Link>
             </div>

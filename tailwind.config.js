@@ -21,10 +21,11 @@ export default {
       colors: {
         primary: '#222222',
         secondary: '#F5E6E0',
-        pacific: '#0093CB',
+        modOrange: '#FA963D',
+        modGreen: '#3CD09B',
       },
       backgroundImage: {
-        home: "url('/src/img/home.jpeg')",
+        home: "url('/src/img/home.png')",
       },
     },
   },

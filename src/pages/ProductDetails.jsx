@@ -29,10 +29,7 @@ const ProductDetails = () => {
                         Sorry, we couldn’t find the page you’re looking for
                     </p>
                     <div className="mt-10 flex items-center justify-center gap-x-6">
-                        <Link
-                        to="/"
-                        className="rounded-md bg-primary px-3.5 py-2.5 text-lg font-semibold text-white shadow-sm hover:bg-teal-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600"
-                        >
+                        <Link to="/" className="rounded-md bg-primary px-3.5 py-2.5 text-lg font-semibold text-white shadow-sm hover:bg-modOrange focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-modOrange">
                         Back to Home
                         </Link>
                     </div>
@@ -43,13 +40,13 @@ const ProductDetails = () => {
 
     const {title, price, description, image} = product;
     return (
-        <section className='pt-32 pb-12 lg:py-32 h-screen flex justify-center items-center'>
-            <div className='container mx-auto'>
+        <section className='h-screen flex justify-center items-center'>
+            <div className='container mx-auto flex justify-center items-center py-20 lg:py-40'>
                 <div className='flex flex-col lg:flex-row justify-center items-center'>
-                    <div className='flex flex-1 justify-center items-center mb-8 lg:mb-0'>
-                        <img className='max-w-[200px] lg:max-w-sm' src={image} alt='' />
+                    <div className='flex flex-1 justify-center items-center mt-8 mb-8 lg:mt-0 lg:mb-0'>
+                        <img className='max-w-[100px] lg:max-w-[300px]' src={image} alt='' />
                     </div>
-                    <div className='flex-1 text-center lg:text-left'>
+                    <div className='flex-1 justify-center items-center text-center lg:text-left px-4 lg:px-0'>
                         <h1 className='text-[26px] font-medium mb-2 max-w-[450px] mx-auto lg:mx-0'>
                             {title}
                         </h1>
@@ -59,7 +56,7 @@ const ProductDetails = () => {
                         <p className='mb-8'>
                             {description}
                         </p>
-                        <button onClick={() => addToCart(product, product.id)} className='bg-primary py-4 px-8 text-white rounded hover:bg-teal-600'>
+                        <button onClick={() => addToCart(product, product.id)} className='bg-primary py-4 px-8 text-white rounded hover:bg-modOrange'>
                             <p className='font-extrabold text-xl lg:text-lg'>Add to Cart</p>
                         </button>
                     </div>
