@@ -13,7 +13,7 @@ const Sidebar = () => {
     const {cart, clearCart, total, itemAmount} = useContext(CartContext);
 
     return (
-        <div className={`${isOpen ? 'right-0' : '-right-full'} w-full bg-white fixed to-0 h-full shadow-2xl md:w-[35vw] xl:max-w-[30vw] transition-all duration-300 z-20 px-4 lg:px-[35px]`}>
+        <div className={`${isOpen ? 'right-0' : '-right-full'} w-full bg-white fixed to-0 h-full shadow-2xl md:w-[35vw] xl:max-w-[30vw] transition-all duration-300 z-20 px-4 lg:px-[35px] flex flex-col`}>
             <div className='flex justify-between items-center py-4 border-b'>
                 <div className='uppercase text-lg font-semibold'>
                     Cart ({itemAmount})
@@ -22,12 +22,12 @@ const Sidebar = () => {
                     <IoMdClose className='text-2xl hover:text-color-pacific' onClick={handleClose} />
                 </div>
             </div>
-            <div className='flex flex-col gap-y-2 h-[520px] overflow-y-auto overflow-x-hidden border-b'>
+            <div className='flex-1 flex flex-col gap-y-2 h-[460px] overflow-y-auto overflow-x-hidden border-b'>
                 {cart.map(item => {
                     return <CartItem item={item} key={item.id} />
                 })}
             </div>
-            <div className='flex flex-col gap-y-3 py-4 mt-4'>
+            <div className='flex flex-col gap-y-3 py-4 mt-auto mb-4'>
                 <div className='flex w-full justify-between items-center'>
                     <div className='uppercase font-semibold'>
                         <span className='mr-2'>Total : </span>SGD {parseFloat(total).toFixed(2)}
