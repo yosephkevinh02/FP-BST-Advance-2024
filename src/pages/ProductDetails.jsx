@@ -19,7 +19,7 @@ const ProductDetails = () => {
         return (
             <section className="min-h-screen grid place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8">
                 <div className="text-center">
-                    <p className="text-5xl font-semibold text-teal-600">
+                    <p className="text-5xl font-semibold text-modOrange">
                         404
                     </p>
                     <h1 className="mt-4 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
@@ -30,7 +30,7 @@ const ProductDetails = () => {
                     </p>
                     <div className="mt-10 flex items-center justify-center gap-x-6">
                         <Link to="/" className="rounded-md bg-primary px-3.5 py-2.5 text-lg font-semibold text-white shadow-sm hover:bg-modOrange focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-modOrange">
-                        Back to Home
+                            Back to Home
                         </Link>
                     </div>
                 </div>
