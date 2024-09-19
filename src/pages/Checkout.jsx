@@ -14,11 +14,8 @@ const Checkout = () => {
                     Stay tuned for updates. We appreciate your patience!
                 </p>
                 <div className="mt-10 flex items-center justify-center gap-x-6">
-                    <Link
-                    to="/"
-                    className="rounded-md bg-primary px-3.5 py-2.5 text-lg font-semibold text-white shadow-sm hover:bg-teal-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600"
-                    >
-                    Back to Home
+                    <Link to="/" className="rounded-md bg-primary px-3.5 py-2.5 text-lg font-semibold text-white shadow-sm hover:bg-teal-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">
+                        Back to Home
                     </Link>
                 </div>
             </div>
