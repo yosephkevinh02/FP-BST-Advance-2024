@@ -43,7 +43,7 @@ const ProductDetails = () => {
                         <p className='mb-8'>
                             {description}
                         </p>
-                        <button onClick={() => addToCart(product, product.id)} className='bg-primary py-4 px-8 text-white rounded'>
+                        <button onClick={() => addToCart(product, product.id)} className='bg-primary py-4 px-8 text-white rounded hover:bg-pacific'>
                             <p className='font-extrabold text-xl lg:text-lg'>Add to Cart</p>
                         </button>
                     </div>
