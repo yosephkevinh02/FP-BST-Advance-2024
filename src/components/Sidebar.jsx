@@ -32,11 +32,11 @@ const Sidebar = () => {
                     <div className='uppercase font-semibold'>
                         <span className='mr-2'>Total : </span>SGD {parseFloat(total).toFixed(2)}
                     </div>
-                    <div onClick={clearCart} className='cursor-pointer py-4 bg-pacific text-white w-12 h-12 flex justify-center items-center text-xl'>
+                    <div onClick={clearCart} className='cursor-pointer py-4 bg-teal-800 text-white w-12 h-12 flex justify-center items-center text-xl'>
                         <FiTrash2 />
                     </div>
                 </div>
-                <Link to={'/checkout'} className='bg-primary flex p-4 mt-4 justify-center items-center text-white w-full font-medium hover:bg-pacific'>
+                <Link to={'/checkout'} className='bg-primary flex p-4 mt-4 justify-center items-center text-white w-full font-medium hover:bg-teal-700'>
                     CHECKOUT
                 </Link>
             </div>
