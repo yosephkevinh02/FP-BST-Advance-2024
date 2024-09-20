@@ -1,8 +1,40 @@
-# React + Vite
+# E-Commerce Website - Advance Store
+## Deskripsi Proyek
+Advance Store adalah platform E-Commerce sederhana yang dirancang dengan desain yang responsif dan modern, menawarkan pengalaman berbelanja yang intuitif dan menyenangkan. Dengan menggunakan React dan Tailwind CSS, Advance Store hadir dengan antarmuka yang menarik untuk meningkatkan kenyamanan pengguna.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Fitur Utama
 
-Currently, two official plugins are available:
+- **Landing Page**: Halaman utama yang menampilkan produk unggulan dan promosi terkini, menciptakan pengalaman belanja yang menarik.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Sidebar (Cart)**: Sidebar yang praktis untuk menampilkan keranjang belanja, memungkinkan pengguna untuk mengelola item dengan mudah.
+
+- **Product Display**: Halaman yang menampilkan berbagai produk dengan gambar dan informasi yang jelas, memudahkan pengguna dalam memilih.
+
+- **Product Details Page**: Halaman khusus untuk setiap produk yang menyediakan informasi mendetail, termasuk deskripsi, harga, dan opsi pembelian.
+
+## Cara Menggunakan Proyek Ini
+
+1. **Prasyarat**:
+   - Pastikan Anda memiliki Node.js dan npm (atau Yarn) terinstal di komputer Anda.
+
+2. **Clone Repository**:
+   - Clone repositori ini ke komputer Anda menggunakan perintah Git: `git clone https://github.com/yosephkevinh02/FP-BST-Advance-2024.git`.
+
+3. **Pindah Direktori Proyek**:
+    - Pindah ke direktori proyek yang baru Anda clone menggunakan perintah: `cd FP-BST-Advance-2024`
+
+4. **Instal Dependensi**:
+   - Jalankan `npm install` untuk menginstal semua dependensi yang diperlukan.
+   - Gunakan `yarn install` jika Anda menggunakan Yarn.
+
+5. **Jalankan Aplikasi**:
+   - Jalankan aplikasi menggunakan perintah `npm run dev`. 
+   - Jika menggunakan Yarn, gunakan perintah `yarn dev`.
+   - Setelah perintah ini dijalankan, Anda akan mendapatkan link di terminal, biasanya `http://localhost:5173`.
+
+6. **Akses Aplikasi**:
+   - Buka browser dan akses aplikasi di alamat yang diberikan, misalnya `http://localhost:5173`.
+   - Aplikasi web akan terbuka dan tampil pada browser Anda.
+
+7. **Mulai Menggunakan**:
+   - Anda akan dapat mengakses berbagai fitur aplikasi, termasuk tampilan produk, detail produk, dan keranjang belanja.
